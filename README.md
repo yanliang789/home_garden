@@ -1,2 +1,3 @@
-# home_garden
+# Home Garden
 CS560 Final Project
+Yan Liang

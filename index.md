@@ -11,7 +11,7 @@ As the coronavirus lockdown laws keep inside the boundaries of our home, there h
 ### Source Links
 ```markdown
 - [Home garden use during COVID-19](https://www.pure.ed.ac.uk/ws/portalfiles/portal/186571793/CorleyJEtalJEP2020HomeGardenUse.pdf)
-- [Google Mobility Trends: How has the pandemic changed the movement of people around the world?](https://ourworldindata.org/covid-mobility-trends)
+- [Google Mobility Trends: How has the pandemic changed the movement of people around the world?] (https://ourworldindata.org/covid-mobility-trends)
 - [Advance Monthly Retail Trade Repor](https://www.census.gov/retail/index.html)
 - [Monthly State Retail Sales](https://www.census.gov/retail/state_retail_sales.html)
 - [Food Price Outlook](https://www.ers.usda.gov/data-products/food-price-outlook/food-price-outlook/#Producer%20Price%20Index)

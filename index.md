@@ -6,7 +6,7 @@
 
 As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food. Vegetable seeds and fruit plants have been recent big sellers through outdoor outlets like Home Depots, Lowes, Ace hardware. I am a home vegetable garden fan. All the vegetables on my table are grown by myself.  I want to encourage people to grow healthy vegetable at home.
 
-### Revised Proposal [Revised Proposal](https://github.com/yanliang789/home_garden/edit/gh-pages/index.md)
+### Revised Proposal [Revised Proposal](https://docs.google.com/document/d/1iN1Xamz8wCOv8jIPiVHqo-2xB3subkITEP9pU6JpKw8/edit)
 
 ### Source Links
 - [Home garden use during COVID-19](https://www.pure.ed.ac.uk/ws/portalfiles/portal/186571793/CorleyJEtalJEP2020HomeGardenUse.pdf)

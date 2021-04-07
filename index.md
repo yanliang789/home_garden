@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# Home Garden
+## Welcome to Yan's Home Garden
+### Yan Liang
 
-You can use the [editor on GitHub](https://github.com/yanliang789/home_garden/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Background and Motivation 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food. Vegetable seeds and fruit plants have been recent big sellers through outdoor outlets like Home Depots, Lowes, Ace hardware. I am a home vegetable garden fan. All the vegetables on my table are grown by myself.  I want to encourage people to grow healthy vegetable at home.
 
-### Markdown
+### Revised Proposal [Revised Proposal](https://github.com/yanliang789/home_garden/edit/gh-pages/index.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Source Links
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- [Home garden use during COVID-19](https://www.pure.ed.ac.uk/ws/portalfiles/portal/186571793/CorleyJEtalJEP2020HomeGardenUse.pdf)
+- [Google Mobility Trends: How has the pandemic changed the movement of people around the world?](https://ourworldindata.org/covid-mobility-trends)
+- [Advance Monthly Retail Trade Repor](https://www.census.gov/retail/index.html)
+- [Monthly State Retail Sales](https://www.census.gov/retail/state_retail_sales.html)
+- [Food Price Outlook](https://www.ers.usda.gov/data-products/food-price-outlook/food-price-outlook/#Producer%20Price%20Index)
+- [Interactive Chart: Price Spreads and Food Markets](https://www.ers.usda.gov/data-products/price-spreads-from-farm-to-consumer/interactive-chart-price-spreads-and-food-markets/)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yanliang789/home_garden/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

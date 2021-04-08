@@ -29,7 +29,7 @@ All the vegetables on my table are grown by myself. I want to encourage people t
 
 ### Data 
 ```markdown
-I added these datasets here because I realized that after I draw pictures from Notability the data links can not open on the proposal PDF)
+I added these datasets here because I realized that after I draw pictures from Notability the data links can not open on the proposal PDF.
 ```
 - I will use [Monthly Retail Trade](https://www.census.gov/retail/index.html#marts) from Census.gov to show the rise retail sale. (Add new dataset)
 - [Summary Findings Food Price Outlook, 2021](https://www.ers.usda.gov/data-products/food-price-outlook/summary-findings/)(Add new dataset)

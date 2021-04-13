@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+	h2 {
+		font-size: 28px;
+		color: #009E73;
+		font-weight: normal;
+		line-height: 1;
+		text-align: left;
+		margin: 10px 20px 20px;
+		transform: translate(+10%, 0%);
+	}
+
+	.toolTip {
+		position: absolute;
+		display: none;
+		min-width: 80px;
+		height: auto;
+		background: none repeat scroll 0 0 #ffffff;
+		border: 1px solid #6F257F;
+		padding: 14px;
+		text-align: center;
+	}
+
+	.axis--x path {
+		display: none;
+	}
+
+	.line {
+		fill: none;
+		stroke: steelblue;
+		stroke-width: 1.5px;
+	}
+</style>
+<div id='second_page'></div>
+<svg width="1000" height="500"></svg>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+
+    var svg = d3.select("svg"),
+        margin = {top: 20, right: 80, bottom: 30, left: 50},
+        width = svg.attr("width") - margin.left - margin.right,
+        height = svg.attr("height") - margin.top - margin.bottom,
+        g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var parseTime = d3.timeParse("%Y");
+    // var line = d3.line()
+    //     .curve(d3.curveBasis)
+    //     .x(function(d) { return x(d.year); })
+    //     .y(function(d) { return y(d.rise); });
+
+    d3.csv("garden_ equip_rise.csv", function(data) {
+        return {
+            year: parseTime(data['year']) ,
+            rise: +data['rise'] * 100,
+            sales: data['sales']
+        };
+    }).then(function(data) {
+        console.log(data);
+        var x = d3.scaleTime()
+            .domain(d3.extent(data, function(d) { return d.year; }))
+            .range([ margin.left + margin.right, width ]);
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x));
+
+        let y = d3.scaleLinear()
+            .domain([0,20])
+            .rangeRound([height - margin.top, 0])
+        svg.append("g")
+            .call(d3.axisLeft(y));
+
+        let line = d3.line()
+            .defined(d => !isNaN(d.rise))
+            .x(d => x(d.year))
+            .y(d => y(d.rise))
+            .curve(d3.curveLinear);
+
+        let path = svg.append("svg")
+
+        svg.append('g')
+            .selectAll("dot")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("class", "bubbles")
+            .attr('cx', function (d) {
+                return x(d.year);
+            })
+            .attr('cy', function (d) {
+                return y(d.rise)
+            })
+            .attr('r', 0.3)
+            .attr('fill', '#000000')
+            // .on("mouseover", showTooltip)
+            // .on("mousemove", moveTooltip)
+            // .on("mouseleave", hideTooltip)
+
+        path.append("path")
+            .datum(data)
+            .style('opacity', 0.9)
+            .attr("fill", "none")
+            // .attr("stroke", 'black')
+            .attr("stroke-width", 2)
+            .attr("stroke-linejoin", "round")
+            .attr("stroke-linecap", "round")
+            .attr("d", line)
+
+
+        //X axis text
+        svg.append("text")
+            .attr("x", (width / 2))
+            .attr("y", height + margin.bottom)
+            .attr("text-anchor", "middle")
+            .attr("font-weight", "bold")
+            .style("font-size", "15px")
+            .style("text-decoration", "underline")
+            .text("Month in 2020(January-November)");
+
+        //Y axis text
+        svg.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("x", 0 - (height / 2))
+            .attr("y", 0 - margin.left)
+            .attr("dy", "1em")
+            .attr("text-anchor", "middle")
+            .attr("font-weight", "bold")
+            .style("font-size", "15px")
+            .text("Covid  19  Cases");
+    })
+
+</script>

@@ -28,7 +28,7 @@ All the vegetables on my table are grown by myself. I want to encourage people t
 - [National Temperature and Precipitation Maps](https://www.ncdc.noaa.gov/temp-and-precip/us-maps/)
 
 
-### [Alpha Release](https://drive.google.com/file/d/1ktQR5_sbkScVmz7GblMtLYBxEeS-IkFS/view?usp=sharing)
+### Alpha Release[Alpha Release](https://drive.google.com/file/d/1ktQR5_sbkScVmz7GblMtLYBxEeS-IkFS/view?usp=sharing)
 
 ### Data 
 ```markdown

@@ -27,6 +27,9 @@ All the vegetables on my table are grown by myself. I want to encourage people t
 - [Climate.gov](https://www.climate.gov/maps-data/data-snapshots/tempoutlook-monthly-cpc-2021-03-31?theme=Temperature)
 - [National Temperature and Precipitation Maps](https://www.ncdc.noaa.gov/temp-and-precip/us-maps/)
 
+
+### [Alpha Release](https://drive.google.com/file/d/1ktQR5_sbkScVmz7GblMtLYBxEeS-IkFS/view?usp=sharing)
+
 ### Data 
 ```markdown
 I added these datasets here because I realized that after I draw pictures from Notability the data links can not open on the proposal PDF.

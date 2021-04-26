@@ -162,7 +162,7 @@
         svg.append("text")
             .attr("transform", `translate(${ width / 5},${height + margin.top + margin.bottom - 20})`)
             .attr("text-anchor", "middle")
-            .text("Apr 19 vs Apr 20");
+            .text("Apr 2019 vs Apr 2020");
 
         //Y axis text
         svg.append("text")
@@ -215,7 +215,7 @@
         svg.append("text")
             .attr("transform", `translate(${2.2 * width / 4},${height + margin.top + margin.bottom - 20})`)
             .attr("text-anchor", "middle")
-            .text("May 19 vs May 20");
+            .text("May 2019 vs May 2020");
 
         //group 3
         bar3.append("g")
@@ -252,7 +252,7 @@
         svg.append("text")
             .attr("transform", `translate(${ width - 100},${height + margin.top + margin.bottom - 20})`)
             .attr("text-anchor", "middle")
-            .text("Jun 19 vs Jun 20");
+            .text("Jun 2019 vs Jun 2020");
     })
 </script>
 

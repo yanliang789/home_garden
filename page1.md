@@ -2,13 +2,13 @@
 <head>
 <style>
 	h2 {
-		font-size: 28px;
-		color: #009E73;
-		font-weight: normal;
-		line-height: 1;
-		text-align: left;
-		margin: 10px 20px 20px;
-		transform: translate(+10%, 0%);
+	font-size: 28px;
+	color: #009E73;
+	font-weight: normal;
+	line-height: 1;
+	text-align: left;
+	margin: 10px 20px 20px;
+	transform: translate(+10%, 0%);
 	}
 
 	div.toolTip {

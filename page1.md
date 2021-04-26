@@ -25,7 +25,7 @@
 
 	div.toolTip {
 		position: absolute;
-		display: none;
+		width: fit-content;
        		text-align: left;
 		min-width: 80px;
 		height: auto;

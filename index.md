@@ -5,6 +5,15 @@
      <a href="/page1/">Page1</a>
 </nav>
 
+<nav>
+    <header>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./page1.html">Page one</a></li>
+            <li><a href="./page2.html">Page two</a></li>
+        </ul>
+    </header>
+
 ### Project Motivation and description
 ```markdown
 As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food.

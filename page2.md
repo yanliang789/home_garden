@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="">
 <head>
   <meta charset="utf-8">
@@ -173,4 +172,3 @@
           .catch(err => console.log(err))
 </script>
 </body>
-</html>

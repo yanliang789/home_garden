@@ -1,8 +1,4 @@
 # Home Garden
-# <nav>
-     <a href="/">Home</a>
-     <a href="/page1/">Page1</a>
-#</nav>
 ### Yan Liang
 <nav>
     <header>
@@ -12,6 +8,7 @@
             <li><a href="https://yanliang789.github.io/home_garden/page3">Page two</a></li>
         </ul>
     </header>
+</nav>
 
 ### Project Motivation and description
 ```markdown

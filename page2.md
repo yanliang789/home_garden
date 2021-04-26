@@ -160,7 +160,7 @@
             .attr("x", 0 - height / 2)
             .attr("y", 60)
             .attr("text-anchor", "middle")
-            .text("The Rise in Percentage")
+            .text("Rise Percentage")
 
     // x-axis title
     svg.append("text")

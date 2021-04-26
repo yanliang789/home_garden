@@ -44,4 +44,4 @@ I added these datasets here because I realized that after I draw pictures from N
 ```markdown
 <script src=page1.html>Page one</script>
 ```
-<iframe width="100%" height="1050" src="page1.html"></script></iframe>
+<iframe width="100%" height="600" src="https://github.com/yanliang789/home_garden/blob/main/page1.html"></script></iframe>

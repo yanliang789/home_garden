@@ -1,3 +1,6 @@
+# Home Garden
+### Yan Liang
+
 ### Project Motivation and description
 ```markdown
 As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food.
@@ -38,4 +41,6 @@ I added these datasets here because I realized that after I draw pictures from N
 - Crawl data using Scrap framework from [Climate zone-US](https://gardenate.com/zones/#zone-US) (Add new dataset, removed not necessary dataset)
 - [San Francisco Plant Finder Data](https://data.world/sanfrancisco/vmnk-skih)
 
+```markdown
 <script src=page1.html>Page one</script>
+```

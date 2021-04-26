@@ -1,5 +1,3 @@
----
-layout: default
 <nav>
     <header>
         <ul>
@@ -10,7 +8,6 @@ layout: default
         </ul>
     </header>
 </nav>
----
 
 # Home Garden
 ### Yan Liang

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <meta charset="utf-8">
 <head>
 <style>
@@ -136,4 +135,3 @@
     })
 </script>
 </body>
-</html>

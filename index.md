@@ -1,5 +1,9 @@
 # Home Garden
 ### Yan Liang
+<nav>
+     <a href="/">Home</a>
+     <a href="/page1/">Page1</a>
+</nav>
 
 ### Project Motivation and description
 ```markdown

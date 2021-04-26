@@ -3,8 +3,9 @@ layout: default
 <nav>
     <header>
         <ul>
-            <li><a href="https://yanliang789.github.io/home_garden/page1">Home</a></li>
-            <li><a href="https://yanliang789.github.io/home_garden/page2">Page one</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden">Home</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page1">Page one</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page2">Page two</a></li>
             <li><a href="https://yanliang789.github.io/home_garden/page3">Page two</a></li>
         </ul>
     </header>

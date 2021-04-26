@@ -8,9 +8,9 @@
 <nav>
     <header>
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./page1.html">Page one</a></li>
-            <li><a href="./page2.html">Page two</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page1">Home</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page2">Page one</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page3">Page two</a></li>
         </ul>
     </header>
 

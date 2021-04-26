@@ -122,7 +122,7 @@
             .attr("y", (margin.bottom + margin.top))
             .attr("text-anchor", "middle")
             .style("font-size", "15px")
-            .text("Percentage Change During Covid-19");
+            .text("Retail Sales Rise During Covid-19");
 
         //Y axis text
         svg.append("text")
@@ -131,7 +131,7 @@
             .attr("y", 0 )
             .attr("dy", "1em")
             .attr("text-anchor", "middle")
-            .text("Retail Sales Rise During Covid-19");
+            .text("Rise Percentage");
     })
 </script>
 </body>

@@ -2,9 +2,9 @@
     <header>
         <ul>
             <li><a href="https://yanliang789.github.io/home_garden">Home</a></li>
-            <li><a href="https://yanliang789.github.io/home_garden/page1">Page One</a></li>
-            <li><a href="https://yanliang789.github.io/home_garden/page2">Page Two</a></li>
-            <li><a href="https://yanliang789.github.io/home_garden/page3">Page Thrid</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page1">Retail Sales Rise during Covid-19</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page2">Annual Retail Sales Growth of Gardening</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/page3">The Most Increase Retail Sales</a></li>
         </ul>
     </header>
 </nav>
@@ -171,13 +171,13 @@
             .attr("y", 0 )
             .attr("dy", "1em")
             .attr("text-anchor", "middle")
-            .text("Retail Sales Rise Percentage");
+            .text("Percentage Increase");
 
         svg.append("text")
             .attr("transform", `translate(${width / 2},${20})`)
             .attr("text-anchor", "middle")
             .attr("font-weight", "bold")
-            .text("The top Retail Sales Rise During Covid-19(2020 VS 2019)")
+            .text("The Most Increase Retail Sales During Covid-19(2020 VS 2019)")
 
         // group 2
         bar2.append("g")

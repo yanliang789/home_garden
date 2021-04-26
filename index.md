@@ -48,7 +48,7 @@ I added these datasets here because I realized that after I draw pictures from N
 ```markdown
 <script src=page1.html>Page one</script>
 ```
-<iframe width="100%" height="600" src="./page1.md"></script></iframe>
+<iframe width="100%" height="600"> <scriptsrc=./page1.md></script></iframe>
 <script src='./page1.md'>Home Page</script>
 <script src='./page2.md'>Page 2</script>
 <script src='./page3.md'>page 3</script>

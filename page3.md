@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <meta charset="utf-8">
 <style>
 	h2 {
@@ -244,6 +243,5 @@
             .attr("text-anchor", "middle")
             .text("Jun 19 vs Jun 20");
     })
-
 </script>
 

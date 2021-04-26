@@ -14,13 +14,14 @@
 	div.toolTip {
 		position: absolute;
 		display: none;
-        text-align: left;
+       		text-align: left;
 		min-width: 80px;
 		height: auto;
-		background: none repeat scroll 0 0 #ffffff;
+		background: #ffffff;
 		border: 1px solid #6F257F;
 		padding: 14px;
 	}
+
 </style>
 <div id='first_page'></div>
 

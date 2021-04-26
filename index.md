@@ -1,6 +1,3 @@
-# Home Garden
-### Yan Liang
-
 ### Project Motivation and description
 ```markdown
 As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food.

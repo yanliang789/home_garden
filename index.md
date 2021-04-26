@@ -1,3 +1,6 @@
+# Home Garden
+### Yan Liang
+
 <nav>
     <header>
         <ul>
@@ -8,9 +11,6 @@
         </ul>
     </header>
 </nav>
-
-# Home Garden
-### Yan Liang
 
 ### Project Motivation and description
 ```markdown
@@ -51,11 +51,3 @@ I added these datasets here because I realized that after I draw pictures from N
 - [Nation Agricultural Statics Service](https://www.nass.usda.gov/) for crop data
 - Crawl data using Scrap framework from [Climate zone-US](https://gardenate.com/zones/#zone-US) (Add new dataset, removed not necessary dataset)
 - [San Francisco Plant Finder Data](https://data.world/sanfrancisco/vmnk-skih)
-
-```markdown
-<script src=page1.html>Page one</script>
-```
-<iframe width="100%" height="600"> <scriptsrc=./page1.md></script></iframe>
-<script src='./page1.md'>Home Page</script>
-<script src='./page2.md'>Page 2</script>
-<script src='./page3.md'>page 3</script>

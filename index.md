@@ -1,5 +1,4 @@
-# Home Garden
-### Yan Liang
+---
 <nav>
     <header>
         <ul>
@@ -9,6 +8,10 @@
         </ul>
     </header>
 </nav>
+---
+
+# Home Garden
+### Yan Liang
 
 ### Project Motivation and description
 ```markdown

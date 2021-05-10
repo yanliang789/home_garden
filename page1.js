@@ -42,6 +42,31 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", function (data) {
         .range([height, 0])
     bar.append("g")
         .call(d3.axisLeft(y));
+    
+   //color legend
+    var Change = ['Retail Rise', 'Garden Sale', 'Retail Fall']
+    var color = d3.scaleOrdinal()
+        .domain(Change)
+        .range(['#6D8700','#1E5631','#D1193E'])
+     var legend = svg.selectAll(".legend")
+        .data(Change)
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+        .attr("x", width - 10)
+        .attr("y", 50)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", color);
+
+    legend.append("text")
+        .attr("x", width - 16)
+        .attr("y", 58)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end")
+        .text(function(d) { return d; });
 
     // Add rects
     bar.append('g')

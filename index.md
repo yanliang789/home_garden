@@ -1,10 +1,10 @@
-# [Home Garden](https://yanliang789.github.io/home_garden/index)
+# [Home Garden](https://yanliang789.github.io/home_garden/template.html)
 ### Yan Liang
 
 <nav>
     <header>
         <ul>
-            <li><a href="https://yanliang789.github.io/home_garden/template">Home Garden Final</a></li>
+            
         </ul>
     </header>
 </nav>
@@ -12,7 +12,7 @@
 <nav>
     <header>
         <ul>
-            <li><a href="https://yanliang789.github.io/home_garden">Home</a></li>
+            <li><a href="https://yanliang789.github.io/home_garden/template.html">Home Garden Final</a></li>
             <li><a href="https://yanliang789.github.io/home_garden/page1">Retail Sales Rise during Covid-19</a></li>
             <li><a href="https://yanliang789.github.io/home_garden/page2">Annual Retail Sales Growth of Gardening</a></li>
             <li><a href="https://yanliang789.github.io/home_garden/page3">The Most Increase Retail Sales</a></li>

@@ -81,9 +81,9 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", function (data) {
         })
         .on("mousemove", function (d) {
             tooltip.transition().duration(200).style('opacity', 0.7);
-            tooltip.html(`<span>${d.estimates}<hr> ${(d3.format(".2f"))(d.change)}%</span>`)
-                .style('left', `${d3.event.layerX + 280}px`)
-                .style('top', `${(d3.event.layerY + 220)}px`);
+            tooltip.html(`<span>${d.estimates}<hr> Change: ${(d3.format(".2f"))(d.change)}%</span>`)
+                .style('left', `${d3.event.layerX  - 50}px`)
+                .style('top', `${(d3.event.layerY + 150)}px`);
         })
         .on('mouseout', () => tooltip.transition().duration(500).style('opacity', 0));
     //Y axis text
@@ -97,7 +97,7 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", function (data) {
 
     // main chart label
     svg.append("text")
-        .attr("transform", `translate(${width / 2},${-30})`)
+        .attr("transform", `translate(${width / 2},${50})`)
         .attr("text-anchor", "middle")
         .attr("font-weight", "bold")
         .text("Retail Sales Percentage Change During Covid-19")

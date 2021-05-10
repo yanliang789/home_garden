@@ -38,7 +38,7 @@ d3.csv("garden_equip_rise.csv", function (data) {
         .style("font", "16px times")
         .call(d3.axisLeft(yScale)
             .tickFormat(d => parseInt(d * 100))
-            .tickSize(-width + margin.left + margin.right)
+            .tickSize(- width + margin.left + margin.top)
         );
 
     // tooltip div -> refered example https://bl.ocks.org/d3noob/180287b6623496dbb5ac4b048813af52
@@ -71,7 +71,7 @@ d3.csv("garden_equip_rise.csv", function (data) {
         .style("opacity", 0.9)
         .on("mousemove", function (d) {
             tooltip_2.transition().duration(200).style('opacity', 0.9);
-            tooltip_2.html(`<span> Year: ${d.year} <hr> Sale: ${d.sales} <hr>Rise: ${(d3.format(".2f"))(d.rise * 100) +'%'} </span>`)
+            tooltip_2.html(`<span> Year: ${d.year} <hr> Sale $${d.sales} <hr>Rise: ${(d3.format(".2f"))(d.rise * 100) +'%'} </span>`)
                 .style('left', `${d3.event.layerX}px`)
                 .style('top', `${(d3.event.layerY + 20)}px`);
         })

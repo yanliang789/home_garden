@@ -55,14 +55,14 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", function (data) {
         .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
     legend.append("rect")
-        .attr("x", width - 10)
+        .attr("x", 100)
         .attr("y", 50)
         .attr("width", 18)
         .attr("height", 18)
         .style("fill", color);
 
     legend.append("text")
-        .attr("x", width - 16)
+        .attr("x", 210)
         .attr("y", 58)
         .attr("dy", ".35em")
         .style("text-anchor", "end")

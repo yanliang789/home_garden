@@ -1,7 +1,7 @@
 # Home Garden
 ### Yan Liang
 
-#### [Home Garden](https://github.com/yanliang789/home_garden/blob/main/final.html)
+#### [Home Garden](https://yanliang789.github.io/home_garden/index)
 
 <nav>
     <header>

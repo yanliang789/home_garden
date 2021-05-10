@@ -26,6 +26,7 @@ d3.csv("garden_equip_rise.csv", function (data) {
 
     // x-axis
     g.append("g")
+        .attr("class", "grid")
         .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
         .style("font", "16px times")
         .call(d3.axisBottom(xScale)
@@ -35,8 +36,10 @@ d3.csv("garden_equip_rise.csv", function (data) {
 
     // y-axis
     g.append("g")
+        .attr("class", "grid")
         .style("font", "16px times")
         .call(d3.axisLeft(yScale)
+            .ticks(4)
             .tickFormat(d => parseInt(d * 100))
             .tickSize(- width + margin.left + margin.top)
         );

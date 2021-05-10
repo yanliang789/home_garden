@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+<!--    <script src="https://d3js.org/d3.v6.min.js"></script>-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js'></script>
+</head>
+<style>
+	h2 {
+		font-size: 28px;
+		color: #009E73;
+		font-weight: normal;
+		line-height: 1;
+		text-align: left;
+		margin: 10px 20px 20px;
+		transform: translate(+10%, 0%);
+	}
+
+	.tooltip{
+		/*background-color: #b0c4de;*/
+		background-color: #3C3176;
+		border: 0;
+		border-radius: 8px;
+		font-family: 'Lobster';
+		font-size: 12px;
+		font-weight: bold;
+		height: auto;
+		padding: 2px;
+		pointer-events: none;
+		position: absolute;
+		text-align: center;
+		width: 120px;
+	}
+	.n {
+		opacity: .8;
+		font-size: 10px;
+		margin-left: 4px;
+		font-family: sans-serif;
+		color: white;
+		padding: 6px;
+		background-color: #3C3176;
+	}
+
+</style>
+<div id='first_page'></div>
+<div id='second_page'></div>
+<div id='page3'></div>
+<body>
+<svg></svg>
+<script src="page1.js"></script>
+<script src="page2.js"></script>
+<script src="p3.js"></script>
+</body>
+</html>

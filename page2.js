@@ -75,8 +75,8 @@ d3.csv("garden_equip_rise.csv", function (data) {
         .on("mousemove", function (d) {
             tooltip_2.transition().duration(200).style('opacity', 0.9);
             tooltip_2.html(`<span> Year: ${d.year} <hr> Sale $${d.sales} <hr>Rise: ${(d3.format(".2f"))(d.rise * 100) +'%'} </span>`)
-                .style('left', `${d3.event.layerX}px`)
-                .style('top', `${(d3.event.layerY + 20)}px`);
+                .style('left', `${d3.event.layerX - 50}px`)
+                .style('top', `${(d3.event.layerY + 250)}px`);
         })
         .on('mouseout', () => tooltip_2.transition().duration(500).style('opacity', 0))
     // y-axis title

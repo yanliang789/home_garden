@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parallax - Free Bulma template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js'></script>
+    <script src="page1.js"></script>
+    <script src="page2.js"></script>
+    <script src="p3.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/hello-parallax.css">
+</head>
+
+<style>
+	h2 {
+		font-size: 28px;
+		color: #009E73;
+		font-weight: normal;
+		line-height: 1;
+		text-align: left;
+		margin: 10px 20px 20px;
+		transform: translate(+10%, 0%);
+	}
+
+	.tooltip{
+		background-color: #b0c4de;
+		background-color: #3C3176;
+		border: 0;
+		border-radius: 8px;
+		font-family: 'Lobster';
+		font-size: 16px;
+		font-weight: bold;
+		height: auto;
+		padding: 2px;
+		pointer-events: none;
+		position: absolute;
+		text-align: center;
+		width: 120px;
+		color: white;
+	}
+	.n {
+		opacity: .8;
+		font-size: 10px;
+		margin-left: 4px;
+		font-family: sans-serif;
+		color: white;
+		padding: 6px;
+		background-color: #3C3176;
+	}
+</style>
+
+<body>
+<section class="hero is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1 ">Home Garden</h1>
+            <h2 class="subtitle">
+                As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food.
+                Garden retails have been recent big sellers through outdoor outlets like Home Depots, Lowes, Ace hardware. I am a home vegetable garden fan.
+                All the vegetables on my table are grown by myself. I want to encourage people to grow healthy vegetable at home.
+                <br> using the Bulma Hero container.
+            </h2>
+            <a href="#parallax-1" class="button is-white is-medium is-inverted">Next &ensp;<i class="fad fa-chevron-right"></i></a>
+            <img src="Picture1.png" alt="Italian Trulli">
+        </div>
+    </div>
+</section>
+<section id="parallax-1" class="hero is-large ">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 is-offset-0">
+                    <h1 class="title is-1 ">Motivation</h1>
+                    <hr class="content-divider">
+                    <h2 class="subtitle">
+                        As the coronavirus lockdown laws keep inside the boundaries of our home, there has been an explosion of interest in producing our own food.
+                        Garden retails have been recent big sellers through outdoor outlets like Home Depots, Lowes, Ace hardware. I am a home vegetable garden fan.
+                        All the vegetables on my table are grown by myself. I want to encourage people to grow healthy vegetable at home.
+                    </h2>
+                    <a href="#parallax-2" class="button is-white is-inverted">Next&ensp;<i class="fad fa-chevron-right"></i></a>
+                    <div id='first_page'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="parallax-2" class="hero is-large ">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <h1 class="title is-1 ">The Rise of Home Garden</h1>
+                    <hr class="content-divider">
+                    <h2 class="subtitle">
+                        The Rise of Garden Equipments Before and during Covid-19.
+                    </h2>
+                    <a href="#parallax-3" class="button is-white is-inverted">Next&ensp;<i class="fad fa-chevron-right"></i></a>
+                    <div id='second_page'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="parallax-3" class="hero is-large ">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 is-offset-3">
+                    <h1 class="title is-1 ">Amet Consectetur</h1>
+                    <hr class="content-divider">
+                    <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure minus nam necessitatibus neque in perferendis eveniet dolorum assumenda dolores accusamus.</h2>
+                    <a href="#" class="button is-white is-inverted">Next&ensp;<i class="fad fa-chevron-right"></i></a>
+                    <div id='page3'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

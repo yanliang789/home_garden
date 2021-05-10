@@ -1,5 +1,5 @@
 ### Final Version
-# [Home Garden WebPage](https://yanliang789.github.io/home_garden/template.html)
+# [Home Garden WebPage](https://yanliang789.github.io/home_garden/template)
 ## [Final Slides](https://yanliang789.github.io/home_garden/Final%20slides%20.pdf)
 ### Yan Liang
 

@@ -1,13 +1,6 @@
+### Final Version
 # [Home Garden](https://yanliang789.github.io/home_garden/template.html)
 ### Yan Liang
-
-<nav>
-    <header>
-        <ul>
-            
-        </ul>
-    </header>
-</nav>
 
 <nav>
     <header>

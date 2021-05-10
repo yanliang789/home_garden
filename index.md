@@ -1,9 +1,5 @@
-# Home Garden
+# [Home Garden](https://yanliang789.github.io/home_garden/index)
 ### Yan Liang
-
-#### [Home Garden](https://yanliang789.github.io/home_garden/index)
-
-
 
 <nav>
     <header>

@@ -3,6 +3,16 @@
 
 #### [Home Garden](https://yanliang789.github.io/home_garden/index)
 
+
+
+<nav>
+    <header>
+        <ul>
+            <li><a href="https://yanliang789.github.io/home_garden/template">Home Garden Final</a></li>
+        </ul>
+    </header>
+</nav>
+
 <nav>
     <header>
         <ul>

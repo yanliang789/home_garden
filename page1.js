@@ -57,7 +57,7 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
         })
         .on("mousemove", function (d) {
             tooltip.transition().duration(200).style('opacity', 0.8);
-            tooltip.html(`<span>${d.estimates}\nChange: ${(d3.format(".2f"))(d.change)}%</span>`)
+            tooltip.html(`<span>${d.estimates}\n: ${(d3.format(".2f"))(d.change)}%</span>`)
                 .style('left', `${d3.event.layerX }px`)
                 .style('top', `${(d3.event.layerY + 150)}px`);
         })

@@ -157,7 +157,7 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
         .attr("transform", `translate(${width / 2},${0})`)
         .attr("text-anchor", "middle")
         .attr("font-weight", "bold")
-        .text("Retail Sales Percentage Change During Covid-19")
+        .text("Retail Sales Percentage Change During Covid-19(2020 vs 2019)")
 
 });
 

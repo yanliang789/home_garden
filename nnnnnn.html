@@ -1,10 +1,8 @@
+<!DOCTYPE html>
 <meta charset="utf-8">
 <head>
     <meta charset="UTF-8">
-    <!--    <script src="https://d3js.org/d3.v6.min.js"></script>-->
     <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js'></script>
 </head>
 <style>
 	h2 {
@@ -17,6 +15,20 @@
 		transform: translate(+10%, 0%);
 	}
 
+	.tooltip{
+		background: #b0c4de;
+		border: 0;
+		border-radius: 8px;
+		font-family: 'Lobster';
+		font-size: 12px;
+		font-weight: bold;
+		height: auto;
+		padding: 2px;
+		pointer-events: none;
+		position: absolute;
+		text-align: center;
+		width: 120px;
+	}
 	.n {
 		opacity: .8;
 		font-size: 10px;
@@ -26,13 +38,17 @@
 		padding: 6px;
 		background-color: #3C3176;
 	}
+	.name, .value {
+		font-size: .7em;
+	}
+
+
 
 </style>
-<div id='third_page'></div>
 
 <body>
-
 <svg></svg>
-<script src="page3.js"></script>
+<div id='first1_page'></div>
+<script src="n.js"></script>
 </body>
 </html>

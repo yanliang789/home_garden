@@ -28,20 +28,57 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", function (data) {
     let bar_width = width / data.length;
 
     // Add X axis for
-    let x = d3.scaleBand()
+    // let x = d3.scaleBand()
+    //     .range([0, width])
+    //     .domain([0, data.length])
+    let x = d3.scaleLinear()
         .range([0, width])
-        .domain([0, data.length])
+        .domain(d3.extent(data, function(d){ return d.change; }));
+
+
+    // Add Y axis
+    // let y = d3.scaleLinear()
+    //     .domain([-100, 100])
+    //     .range([height, 0])
+    let y = d3.scaleBand()
+        .range([height, 0])
+        .padding(0.2)
+        .domain(data.map(function(d) { return d.estimates; }))
+
     bar.append("g")
         .attr("transform", "translate(0," + height / 2 + ")")
-        .call(d3.axisBottom(x).tickFormat(function (d) {
+        .call(d3.axisBottom(y).tickFormat(function (d) {
             return d.estimates;
         }))
-    // Add Y axis
-    let y = d3.scaleLinear()
-        .domain([-100, 100])
-        .range([height, 0])
+
     bar.append("g")
-        .call(d3.axisLeft(y));
+        .call(d3.axisLeft(x));
+
+    var Change = ['Retail Rise', 'Garden Sale', 'Retail Fall']
+    var color = d3.scaleOrdinal()
+        .domain(Change)
+        .range(['#6D8700','#1E5631','#D1193E'])
+//
+    var legend = svg.selectAll(".legend")
+        .data(Change)
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+        .attr("x", 100)
+        .attr("y", 50)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", color);
+
+    legend.append("text")
+        .attr("x", 210)
+        .attr("y", 58)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end")
+        .text(function(d) { return d; });
+
 
     // Add rects
     bar.append('g')
@@ -53,7 +90,7 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", function (data) {
             return a.change - b.change;
         })
         .attr("class", "rects")
-        .attr("y", function (d) {
+        .attr("x", function (d) {
             if (d.change >= 0) {
                 return y(d.change);
             }

@@ -7,7 +7,7 @@ d3.csv("garden_equip_rise.csv", function (data) {
         .append("svg")
         .attr("width", width)
         .attr("height", height)
-        .style("background-color", "#f3f3f3")
+        // .style("background-color", "#f3f3f3")
 
     // defining xScale
     const xScale = d3.scaleTime()
@@ -26,8 +26,10 @@ d3.csv("garden_equip_rise.csv", function (data) {
 
     // x-axis
     g.append("g")
-        .attr("transform", `translate(0,${height - margin.top - margin.bottom})`)
+        .attr("class", "grid")
+        .attr("transform", `translate(0,${height - margin.top - margin.bottom })`)
         .style("font", "16px times")
+        .attr('dy', '1em')
         .call(d3.axisBottom(xScale)
             .tickFormat(d3.timeFormat("%Y"))
             .tickSize(-height + margin.top + margin.bottom)
@@ -35,10 +37,14 @@ d3.csv("garden_equip_rise.csv", function (data) {
 
     // y-axis
     g.append("g")
+        .attr("class", "grid")
         .style("font", "16px times")
+        .attr("class", "axisRed")
+        .attr('dy', '10em')
         .call(d3.axisLeft(yScale)
+            .ticks(4)
             .tickFormat(d => parseInt(d * 100))
-            .tickSize(- width + margin.left + margin.top)
+            .tickSize(-width + margin.left + margin.right)
         );
 
     // tooltip div -> refered example https://bl.ocks.org/d3noob/180287b6623496dbb5ac4b048813af52
@@ -72,8 +78,8 @@ d3.csv("garden_equip_rise.csv", function (data) {
         .on("mousemove", function (d) {
             tooltip_2.transition().duration(200).style('opacity', 0.9);
             tooltip_2.html(`<span> Year: ${d.year} <hr> Sale $${d.sales} <hr>Rise: ${(d3.format(".2f"))(d.rise * 100) +'%'} </span>`)
-                .style('left', `${d3.event.layerX}px`)
-                .style('top', `${(d3.event.layerY + 20)}px`);
+                .style('left', `${d3.event.layerX - 50}px`)
+                .style('top', `${(d3.event.layerY + 250)}px`);
         })
         .on('mouseout', () => tooltip_2.transition().duration(500).style('opacity', 0))
     // y-axis title

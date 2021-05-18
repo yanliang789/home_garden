@@ -1,21 +1,7 @@
-d3.csv("top_rise_retail_sales2020and2019.csv", function (data) {
-    return {
-        kind: data['Kind of Business'],
-        month: [+data['Apr.change'] * 100, +data['May.change'] * 100, +data['Jun.change'] * 100],
-        Apr: +data['Apr.change'] * 100,
-        May: +data['May.change'] * 100,
-        Jun: +data['Jun.change'] * 100
-    };
-    // return data;
-}).then(function (data) {
-
-
-
-
-
-    let margin = {top: 20, right: 60, bottom: 20, left: 50},
-        width = 1200 - margin.left - margin.right,
-        height = 800 - margin.top - margin.bottom;
+d3.csv("data/top_rise_retail_sales2020and2019.csv", function (data) {
+    let margin = {top:80, right: 60, bottom: 50, left: 150},
+        width = 1000 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
     const svg = d3.select('#third_page')
         .append("svg")
@@ -25,209 +11,101 @@ d3.csv("top_rise_retail_sales2020and2019.csv", function (data) {
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-    let padding = 8;
-    let bar = svg.append("g")
-        .attr('transform', `translate(${margin.left}, ${margin.right})`);
+    var subgroups = data.columns.slice(1)
+    const tip = d3.tip().html(function (d) {
+       return d.key + '<hr/> ' +  (d3.format(".2f"))(d.value) + '%';
+    })
 
-    let bar2 = svg.append("g")
-        .attr('transform', `translate(${width / 3 + margin.left}, ${margin.right})`);
+    var months = data.columns.slice(1)
 
-    let bar3 = svg.append("g")
-        .attr('transform', `translate(${2 * width / 3 + margin.left}, ${margin.right})`);
+    // List of groups = species here = value of the first column called group -> I show them on the X axis
+    var groups = d3.map(data, function(d){return(d.kind)}).keys()
 
-    let kinds = {
-        "Building mat. and garden equip. and supplies dealers": "Garden equip Shopping",
-        "Electronic shopping and mail-order houses": "E shopping",
-        "Beer, wine, and liquor stores": "Beer wine shopping"
-    };
-
-    console.log(data);
-    let bar_width = width / (4 * data.length);
-    // Add X axis for
-    let x = d3.scaleBand()
+    // Add X axis
+    var x = d3.scaleBand()
+        .domain(groups)
         .range([0, width])
-        .domain(data.map(item => item.kind))
+        .padding([0.2])
+    svg.append("g")
+        .style("font", "16px times")
+        .attr("transform", "translate(0," + height+ ")")
+        .call(d3.axisBottom(x).tickSize(0));
 
-    bar.append("g")
-        // .attr("transform", "translate(0," +  height + ")")
-        .attr("transform", "translate(" + margin.left + "," + margin.right + ")")
-        .call(d3.axisBottom(x).tickFormat(function (d) {
-            return d.kind;
-        }))
-
-    let y = d3.scaleLinear()
-        .domain([-5, 40])
-        .range([height, 0])
-
-    bar.append("g")
+    // Add Y axis
+    var y = d3.scaleLinear()
+        .domain([0, 40])
+        .range([ height, 0 ]);
+    svg.append("g")
         .style("font", "16px times")
         .call(d3.axisLeft(y));
 
-    // Add a scale for bubble color
-    let my_color = d3.scaleOrdinal()
-        .domain(data.map(item => item.kind))
-        .range(['#ABF1Bc', '#F89880', 'steelblue']);
+    svg.call(tip);
+// Another scale for subgroup position?
+    var xSubgroup = d3.scaleBand()
+        .domain(subgroups)
+        .range([0, x.bandwidth()])
+        .padding([0.05])
 
-    //color legend
+    // color palette = one color per subgroup
+    var color = d3.scaleOrdinal()
+        .domain(subgroups)
+        .range(['#e5f5f9','#99d8c9','#2ca25f'])
+
+    // Show the bars
     svg.append("g")
-        .attr("class", "legendLog")
-        .attr('transform', 'translate(721,20)');
-    let color_legend = d3.legendColor()
-        .shape('rect')
-        .shapePadding(10)
-        .shapeRadius(10)
-        .orient('vertical')
-        .cells(3)
-        .scale(my_color);
-    svg.select(".legendLog")
-        .call(color_legend);
-
-    let tooltip = d3.select("#third_page")
-        .append("div")
-        .style("opacity", 0)
-        .attr("class", "tooltip")
-
-    // functions for tooltip
-    let showTooltip = function (event, d) {
-        tooltip.transition()
-            .duration(200)
-            .style('opacity', 0.7)
-            .style('left', (event.pageX + 'px'))
-            .style('top', (event.pageY - 20 + 'px'))
-        tooltip.html(`
-                ${kinds[d.kind]} <br/>
-                ${(d3.format(".2f"))(d.month[0]) + '%'}<br/>
-            `)
-    }
-
-    let moveTooltip = function (event, d) {
-        tooltip.style("left", (event.pageX) + "px")
-            .style("top", (event.pageY + 10) + "px")
-    }
-    let hideTooltip = function (d) {
-        tooltip.transition()
-            .duration(500)
-            .style("opacity", 0)
-    }
-
-    // Add rects
-    bar.append('g')
-        .selectAll("rect")
+        .selectAll("g")
+        // Enter in data = loop group per group
         .data(data)
         .enter()
-        .append("rect")
-        .attr("class", "rects")
-        .attr("y", function (d) {
-            return y(d.month[0]);
-        })
-        .attr("height", function (d) {
-            return height - y(d.month[0]);
-        })
-        .attr("width", bar_width - padding)
-        .attr('transform', function (d, i) {
-            let position = [bar_width * i + padding, 0];
-            return 'translate(' + position + ')';
-        })
-        .attr("fill", function (d) {
-            return my_color(d.kind);
-        })
-        .on("mouseover", showTooltip)
-        .on("mousemove", moveTooltip)
-        .on("mouseleave", hideTooltip);
+        .append("g")
+        .attr("transform", function(d) { return "translate(" + x(d.kind) + ",0)"; })
+        .selectAll("rect")
+        .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
+        .enter().append("rect")
+        .attr("x", function(d) { return xSubgroup(d.key); })
+        .attr("y", function(d) { return y(d.value); })
+        .attr("width", xSubgroup.bandwidth())
+        .attr("height", function(d) { return height - y(d.value); })
+        .attr("fill", function(d) { return color(d.key); })
+        .on('mouseover', tip.show)
+        .on('mouseout', tip.hide)
 
-    //X axis text
-    svg.append("text")
-        .attr("transform", `translate(${width / 5},${height + margin.top + margin.bottom - 20})`)
-        .attr("text-anchor", "middle")
-        .text("Apr 19 vs Apr 20");
+    var legend = svg.selectAll(".legend")
+        .data(months)
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
-    //Y axis text
+    legend.append("rect")
+        .attr("x", width - 18)
+        .attr("width", 18)
+        .attr("height", 18)
+        .style("fill", color);
+
+    legend.append("text")
+        .attr("x", width - 24)
+        .attr("y", 9)
+        .attr("dy", ".35em")
+        .style("text-anchor", "end")
+        .text(function(d) { return d; });
+
     svg.append("text")
         .attr("transform", "rotate(-90)")
-        .attr("x", 0 - height / 2 - 60)
-        .attr("y", 0)
-        .attr("dy", "1em")
+        .attr("x", 0 - height / 2)
+        .attr("y", -35)
         .attr("text-anchor", "middle")
-        .text("Retail Sales Rise Percentage");
+        .text("The rise percentage")
 
+    // x-axis title
     svg.append("text")
-        .attr("transform", `translate(${width / 2},${20})`)
+        .attr("transform", `translate(${width / 2},${height + 40})`)
+        .attr("text-anchor", "middle")
+        .text("Category")
+
+    // main chart label
+    svg.append("text")
+        .attr("transform", `translate(${width / 2},${10})`)
         .attr("text-anchor", "middle")
         .attr("font-weight", "bold")
-        .text("The top Retail Sales Rise During Covid-19(2020 VS 2019)")
-
-    // group 2
-    bar2.append("g")
-        .attr("transform", `translate(${width / 3 + 10},${height})`)
-        .call(d3.axisBottom(x)
-            .tickFormat(function (d) {
-                return d.kind;
-            }))
-    bar2.append("g")
-        .call(d3.axisLeft(y));
-    bar2.append('g')
-        .selectAll("rect")
-        .data(data)
-        .enter()
-        .append("rect")
-        .attr("class", "rects")
-        .attr("y", function (d) {
-            return y(d.month[1]);
-        })
-        .attr("height", function (d) {
-            return height - y(d.month[1]);
-        })
-        .attr("width", bar_width - padding)
-        .attr('transform', function (d, i) {
-            let position = [bar_width * i + padding, 0];
-            return 'translate(' + position + ')';
-        })
-        .attr("fill", function (d) {
-            return my_color(d.kind);
-        })
-        .on("mouseover", showTooltip)
-        .on("mousemove", moveTooltip)
-        .on("mouseleave", hideTooltip);
-
-    svg.append("text")
-        .attr("transform", `translate(${2.2 * width / 4},${height + margin.top + margin.bottom - 20})`)
-        .attr("text-anchor", "middle")
-        .text("May 19 vs May 20");
-
-    //group 3
-    bar3.append("g")
-        .attr("transform", `translate(${width / 3 + 10},${height})`)
-        .call(d3.axisBottom(x).tickFormat(function (d) {
-            return d.kind;
-        }))
-    bar3.append("g")
-        .call(d3.axisLeft(y));
-    bar3.append('g')
-        .selectAll("rect")
-        .data(data)
-        .enter()
-        .append("rect")
-        .attr("class", "rects")
-        .attr("y", function (d) {
-            return y(d.month[2]);
-        })
-        .attr("height", function (d) {
-            return height - y(d.month[2]);
-        })
-        .attr("width", bar_width - padding)
-        .attr('transform', function (d, i) {
-            let position = [bar_width * i + padding, 0];
-            return 'translate(' + position + ')';
-        })
-        .attr("fill", function (d) {
-            return my_color(d.kind);
-        })
-        .on("mouseover", showTooltip)
-        .on("mousemove", moveTooltip)
-        .on("mouseleave", hideTooltip);
-
-    svg.append("text")
-        .attr("transform", `translate(${width - 100},${height + margin.top + margin.bottom - 20})`)
-        .attr("text-anchor", "middle")
-        .text("Jun 19 vs Jun 20");
+        .text("The Top Retail Sales Rise During Covid-19(2019 VS 2020)")
 })

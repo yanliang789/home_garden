@@ -1,4 +1,4 @@
-d3.csv("garden_equip_rise.csv", function (data) {
+d3.csv("data/garden_equip_rise.csv", function (data) {
     let margin = {top: 80, right: 80, bottom: 100, left: 150},
         width = 1400 - margin.left - margin.right,
         height = 700 - margin.top - margin.bottom;

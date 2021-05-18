@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b211bc0-bfee-44c3-801c-2039b997dd39" name="Default Changelist" comment="" />
+    <list default="true" id="9b211bc0-bfee-44c3-801c-2039b997dd39" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019 Estimates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019 Estimates.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020 Estimates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2020 Estimates.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2020VS2019Estimates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2020VS2019Estimates.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Book Rise in April to June.twb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS560 Final Project - Alpha.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS560 Final Project - Alpha.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/CS560 Final Project - Alpha.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EstimatesOfBusiness2019VS2020.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/EstimatesOfBusiness2019VS2020.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EstimatesOfMonthly2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/EstimatesOfMonthly2019.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EstimatesOfMonthly2020.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/EstimatesOfMonthly2020.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final slides .pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/Final slides .pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Picture1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/Picture1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first_page_bartchart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/garden_equip_rise.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/garden_equip_rise.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mrtssales92-present.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/mrtssales92-present.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p3.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_html/page3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_html/page1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page1.js" beforeDir="false" afterPath="$PROJECT_DIR$/page1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_html/page2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page2.js" beforeDir="false" afterPath="$PROJECT_DIR$/page2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page3.js" beforeDir="false" afterPath="$PROJECT_DIR$/page3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second_page_linechart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top_rise_retail_sales2020and2019.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/top_rise_retail_sales2020and2019.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,52 +58,55 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/script" />
-      <recent name="$PROJECT_DIR$/Data" />
-      <recent name="$PROJECT_DIR$/Reports" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/scrpt" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/test_html" />
+      <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.page1.html">
+  <component name="RunManager" selected="JavaScript Debug.template.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="p3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/p3.html" useBuiltInWebServerPort="true">
+    <configuration name="page1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/test_html/page1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="page1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/page1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="page1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/page1.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="page2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/page2.html" useBuiltInWebServerPort="true">
+    <configuration name="page2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/test_html/page2.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="page3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/page3.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="page3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/test_html/page3.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="page3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/page3.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="template.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/home_garden/template.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.page1.html" />
-        <item itemvalue="JavaScript Debug.p3.html" />
+        <item itemvalue="JavaScript Debug.template.html" />
         <item itemvalue="JavaScript Debug.page3.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.page1.html" />
         <item itemvalue="JavaScript Debug.page2.html" />
+        <item itemvalue="JavaScript Debug.page3.html" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +129,7 @@
       <workItem from="1621109412373" duration="8791000" />
       <workItem from="1621216679064" duration="4892000" />
       <workItem from="1621373496812" duration="3654000" />
+      <workItem from="1621377199783" duration="2377000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-d3.csv("EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
+d3.csv("data/EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
     if (error) throw error;
 
     data.sort(function (a, b) {
@@ -59,7 +59,7 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
             tooltip.transition().duration(200).style('opacity', 0.8);
             tooltip.html(`<span>${d.estimates}\n: ${(d3.format(".2f"))(d.change)}%</span>`)
                 .style('left', `${d3.event.layerX }px`)
-                .style('top', `${(d3.event.layerY + 200)}px`);
+                .style('top', `${(d3.event.layerY + 300)}px`);
         })
         .on('mouseout', () => tooltip.transition().duration(500).style('opacity', 0));
 

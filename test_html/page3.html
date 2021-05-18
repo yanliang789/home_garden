@@ -1,8 +1,9 @@
 <meta charset="utf-8">
 <head>
     <meta charset="UTF-8">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js'></script>
 </head>
 <style>
 	h2 {
@@ -15,18 +16,14 @@
 		transform: translate(+10%, 0%);
 	}
 
-	.tooltip {
-		position: absolute;
-		display: none;
-		min-width: fit-content;
-		height: auto;
-		background: none repeat scroll 0 0 #ffffff;
-		opacity: 0.8;
-		border: 1px solid #6F257F;
-		border-radius: 5px;
-		padding: 14px;
-		text-align: center;
-		pointer-events: none;
+	.n {
+		opacity: .8;
+		font-size: 10px;
+		margin-left: 4px;
+		font-family: sans-serif;
+		color: white;
+		padding: 6px;
+		background-color: #3C3176;
 	}
 
 </style>
@@ -35,7 +32,7 @@
 <body>
 
 <svg></svg>
-<script src="page3.js"></script>
+<script src="../script/p3.js"></script>
 </body>
 </html>
 

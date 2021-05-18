@@ -1,4 +1,4 @@
-d3.csv("top_rise_retail_sales2020and2019.csv", function (data) {
+d3.csv("Data/top_rise_retail_sales2020and2019.csv", function (data) {
     let margin = {top:80, right: 60, bottom: 50, left: 150},
         width = 1000 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;
@@ -13,7 +13,7 @@ d3.csv("top_rise_retail_sales2020and2019.csv", function (data) {
 
     var subgroups = data.columns.slice(1)
     const tip = d3.tip().html(function (d) {
-        return d.key + '<hr/> ' +  (d3.format(".2f"))(d.value) + '%';
+       return d.key + '<hr/> ' +  (d3.format(".2f"))(d.value) + '%';
     })
 
     var months = data.columns.slice(1)

@@ -1,4 +1,4 @@
-d3.csv("EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
+d3.csv("Data/EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
     if (error) throw error;
 
     data.sort(function (a, b) {
@@ -56,10 +56,10 @@ d3.csv("EstimatesOfBusiness2019VS2020.csv", types, function (error, data) {
             return d.change < 0 ? "#d7191c" : "#1a9641";
         })
         .on("mousemove", function (d) {
-            tooltip.transition().duration(200).style('opacity', 0.7);
-            tooltip.html(`<span>${d.estimates}<hr> Change: ${(d3.format(".2f"))(d.change)}%</span>`)
-                .style('left', `${d3.event.layerX - 50}px`)
-                .style('top', `${(d3.event.layerY + 150)}px`);
+            tooltip.transition().duration(200).style('opacity', 0.8);
+            tooltip.html(`<span>${d.estimates}\nChange: ${(d3.format(".2f"))(d.change)}%</span>`)
+                .style('left', `${d3.event.layerX }px`)
+                .style('top', `${(d3.event.layerY + 330)}px`);
         })
         .on('mouseout', () => tooltip.transition().duration(500).style('opacity', 0));
 

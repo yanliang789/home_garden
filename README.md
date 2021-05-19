@@ -17,5 +17,5 @@
    - theme: jekyll-theme-cayman
 
 ### URL 
-[Code Link](https://github.com/yanliang789/home_garden/tree/gh-pages) 
-[WebPage](https://yanliang789.github.io/home_garden/template)
+- [Code Link](https://github.com/yanliang789/home_garden/tree/gh-pages) 
+- [WebPage](https://yanliang789.github.io/home_garden/template)
